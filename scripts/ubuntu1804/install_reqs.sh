@@ -164,7 +164,7 @@ make -j4 && make install && ldconfig &&
 pushd
 
 # install python packages for tuplex (needs cloudpickle to compile, numpy to run certain tests)
-pip3 install cloudpickle numpy
+python3 -m pip cloudpickle numpy
 
 # setup bash aliases
 echo "alias antlr='java -jar /opt/lib/antlr-4.8-complete.jar'" >>"$HOME/.bashrc"

@@ -32,4 +32,4 @@ mkdir -p /tmp/downloads &&
   echo "export PYSPARK_DRIVER_PYTHON=python3" >> "$HOME/.bashrc"
 
 # install Dask
-sudo pip3 install "dask[complete]"
+sudo python3 -m pip install "dask[complete]"
